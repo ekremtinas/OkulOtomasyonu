@@ -1,0 +1,184 @@
+﻿@model OkulOtomasyonu.Models.EntityFramework.Yoneticiler
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Yönetici Güncelle</h5>
+
+            </div>
+
+            @using (Html.BeginForm("Edit", "Yoneticiler", FormMethod.Post, new { id = "myForm" }))
+            {
+                <div class="modal-body">
+
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <style>
+                            .span-danger {
+                                font-size: 12px !important;
+                                opacity: 0.9;
+                                position: fixed;
+                            }
+                        </style>
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger span-danger" })
+                        @Html.HiddenFor(model=>model.id)
+                        
+
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Kullanıcı Adı:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input onclick="spanAdi()" class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="k_adi" name="k_adi" type="text" value="@{var k_adi = Model.k_adi.Trim().Replace("  ", string.Empty);  @k_adi}">
+                                @Html.ValidationMessageFor(model => model.k_adi, "", new { @class = "text-danger span-danger ", id = "spanadi" })
+                                <span id="tc_noNotError2" class="field-validation-valid text-danger span-danger">@TempData["Error3"]</span>
+                            </div>
+                        </div>
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Şifre:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input onclick="spanSoyadi()" class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="sifre" name="sifre" type="password" value="@{var sifre = Model.sifre.Trim().Replace(" ", string.Empty);  @sifre}">
+                                @Html.ValidationMessageFor(model => model.sifre, "", new { @class = "text-danger span-danger", id = "spansoyadi" })
+                              @{
+                                  if (Model.id.ToString() == HttpContext.Current.User.Identity.Name)
+                                  {
+                                      <input class="password-check" type="checkbox" id="input-sifre2" onchange="myChangle()" onclick="myFunction()">
+                         
+                                    
+                                  }
+                                  else
+                                  {
+                                      
+                                  }
+                            }
+                                
+                                     </div>
+                        </div>
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Şifre Tekrarı:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input onclick="spanSifreTekrar()" class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="sifre2" name="sifre2" type="password" value="@{var sifre2 = Model.sifre.Trim().Replace(" ", string.Empty);  @sifre2}">
+                                @Html.ValidationMessageFor(model => model.sifre2, "", new { @class = "text-danger span-danger", id = "spansifretekrar" })
+                                @{
+                                    if (Model.id.ToString() == HttpContext.Current.User.Identity.Name)
+                                    {
+                                        <input class="password-check" type="checkbox" id="input-sifre2" onchange="myChangle()" onclick="myFunction2()">
+
+
+                                    }
+                                    else
+                                    {
+
+                                    }
+                                } </div>
+                        </div>
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>E Mail:</b></label><text class="star">*</text>
+                            <div class="col-6">
+
+                                <input onclick="spanTcno()" class="form-control  mr-sm-2 btn-sm in-margin  single-line" id="email" name="email" type="email" value="@{var email = Model.email.Trim().Replace(" ", string.Empty);  @email}">
+                                @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger span-danger", id = "spantcno" })
+                                <span class="field-validation-valid text-danger span-danger"> @TempData["Error4"] </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Gizli Soru:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input onclick="spanOno()" class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="gizlisoru" name="gizlisoru" type="@{
+                                    if (Model.id.ToString() == HttpContext.Current.User.Identity.Name)
+                                    {
+                                        var text = "text";
+                                        @text
+                                    }
+                                    else
+                                    {
+                                       var text = "password";
+                                        @text
+                                        }
+                                    }" value="@{var gizlisoru = Model.gizlisoru.Trim().Replace("  ", string.Empty);  @gizlisoru}">
+                                @Html.ValidationMessageFor(model => model.gizlisoru, "", new { @class = "text-danger span-danger", id = "spanono" })
+
+
+                            </div>
+                        </div>
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Gizli Cevap:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input class="input-validation-error form-control  mr-sm-2 btn-sm in-margin datepicker text-box single-line" onclick="spanDtarihi()" id="gizlicevap" name="gizlicevap" type="@{
+                                    if (Model.id.ToString() == HttpContext.Current.User.Identity.Name)
+                                    {
+                                        var text = "text";
+                                        @text
+                                    }
+                                    else
+                                    {
+                                       var text = "password";
+                                        @text
+                                        }
+                                    }" value="@{var gizlicevap = Model.gizlicevap.Trim().Replace("  ", string.Empty);  @gizlicevap}">
+                                @Html.ValidationMessageFor(model => model.gizlicevap, "", new { @class = "text-danger span-danger", id = "spandtarihi" })
+
+                            </div>
+                        </div>
+                        <div style="display:none;" class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Son Giriş Tarihi:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input class="input-validation-error form-control  mr-sm-2 btn-sm in-margin text-box single-line" onclick="spanAdres()" id="songiristarihi" name="songiristarihi" type="text" value="@DateTime.Today.ToShortDateString()">
+                                @Html.ValidationMessageFor(model => model.songiristarihi, "", new { @class = "text-danger span-danger", id = "spanadres" })
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="/Yoneticiler/Index" class="btn btn-outline-dark">Listeye Dön</a>
+                    <input style="@{
+                                    if (Model.id.ToString() == HttpContext.Current.User.Identity.Name)
+                                    {
+                                        var text = "display:inherit";
+                                        @text
+                                    }
+                                    else
+                                    {
+                                       var text = "display:none;";
+                                        @text
+                                        }
+                                    }" onclick="return bootboxUpdateAdmin()" type="button" id="Update" value="Kaydet" class="btn btn-outline-success" />
+
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               

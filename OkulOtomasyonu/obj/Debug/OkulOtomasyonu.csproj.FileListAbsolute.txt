@@ -1,0 +1,236 @@
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\ApplicationInsights.config
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\csc.exe
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\System.Collections.Immutable.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\vbc.exe
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\VBCSCompiler.exe
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\roslyn\VBCSCompiler.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\OkulOtomasyonu.dll.config
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\OkulOtomasyonu.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\OkulOtomasyonu.pdb
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.AI.Web.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.AI.WindowsServer.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.ApplicationInsights.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.Web.Infrastructure.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Helpers.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Mvc.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Razor.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Webpages.Deployment.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Webpages.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Webpages.Razor.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.AI.Web.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.AI.WindowsServer.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.ApplicationInsights.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Razor.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Webpages.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Webpages.Deployment.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Webpages.Razor.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Helpers.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\System.Web.Mvc.xml
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.csprojResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.dll
+c:\users\hp\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.pdb
+C:\Users\HP\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\EntityFramework.dll
+C:\Users\HP\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\EntityFramework.xml
+C:\Users\HP\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\documents\visual studio 2015\Projects\OkulOtomasyonu\OkulOtomasyonu\bin\AjaxControlToolkit.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\ApplicationInsights.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\csc.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\vbc.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\OkulOtomasyonu.dll.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\OkulOtomasyonu.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\OkulOtomasyonu.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\AjaxControlToolkit.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.Web.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.ApplicationInsights.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Helpers.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Mvc.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Razor.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Deployment.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Razor.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.Web.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.ApplicationInsights.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Razor.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Deployment.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Razor.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Helpers.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Mvc.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.pdb
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\ApplicationInsights.config
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\csc.exe
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\vbc.exe
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\VBCSCompiler.exe
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\OkulOtomasyonu.dll.config
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\OkulOtomasyonu.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\OkulOtomasyonu.pdb
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\AjaxControlToolkit.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.SqlServer.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.Web.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.ApplicationInsights.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Helpers.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Mvc.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Razor.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Deployment.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Razor.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.SqlServer.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.Web.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.ApplicationInsights.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Razor.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Deployment.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Razor.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Helpers.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Mvc.xml
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.dll
+C:\Users\TINAS\Documents\Visual Studio 2015\Projects\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.pdb
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\ApplicationInsights.config
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\OkulOtomasyonu.dll.config
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\OkulOtomasyonu.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\OkulOtomasyonu.pdb
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\AjaxControlToolkit.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.SqlServer.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Helpers.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Mvc.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Razor.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Razor.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\EntityFramework.SqlServer.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.Web.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Razor.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Webpages.Razor.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Helpers.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Web.Mvc.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.csprojAssemblyReference.cache
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.csproj.CopyComplete
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.pdb
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\csc.exe
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\csc.exe.config
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\csc.rsp
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\csi.exe
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\csi.rsp
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\System.AppContext.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\vbc.exe
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\vbc.exe.config
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\vbc.rsp
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.Web.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Buffers.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Memory.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.DependencyCollector.pdb
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.PerfCounterCollector.pdb
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.PerfCounterCollector.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.pdb
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.Web.pdb
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AI.WindowsServer.pdb
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.ApplicationInsights.pdb
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Buffers.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Memory.xml
+C:\Users\Ekrem\Desktop\OkulOtomasyonu2\OkulOtomasyonu\bin\System.Runtime.CompilerServices.Unsafe.xml

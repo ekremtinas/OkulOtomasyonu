@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SchoolDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Dersler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="ders_no" Type="int" Nullable="false" />
+    <Property Name="ders_adi" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="ders_hocasi" Type="nchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OgrenciDers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="ders_id" Type="int" />
+    <Property Name="ogrenci_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Ogrenciler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="adi" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="soyadi" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="tc_no" Type="nchar" MaxLength="11" Nullable="false" />
+    <Property Name="o_no" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="d_tarihi" Type="smalldatetime" Nullable="false" />
+    <Property Name="adres" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Yoneticiler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="k_adi" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="sifre" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="nchar" MaxLength="100" />
+    <Property Name="gizlisoru" Type="nchar" MaxLength="200" />
+    <Property Name="gizlicevap" Type="nchar" MaxLength="200" />
+    <Property Name="songiristarihi" Type="smalldatetime" />
+  </EntityType>
+  <Association Name="FK_OgrenciDers_Dersler">
+    <End Role="Dersler" Type="Self.Dersler" Multiplicity="0..1" />
+    <End Role="OgrenciDers" Type="Self.OgrenciDers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dersler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OgrenciDers">
+        <PropertyRef Name="ders_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciDers_Ogrenciler">
+    <End Role="Ogrenciler" Type="Self.Ogrenciler" Multiplicity="0..1" />
+    <End Role="OgrenciDers" Type="Self.OgrenciDers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenciler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OgrenciDers">
+        <PropertyRef Name="ogrenci_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SchoolDatabaseModelStoreContainer">
+    <EntitySet Name="Dersler" EntityType="Self.Dersler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OgrenciDers" EntityType="Self.OgrenciDers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ogrenciler" EntityType="Self.Ogrenciler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yoneticiler" EntityType="Self.Yoneticiler" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_OgrenciDers_Dersler" Association="Self.FK_OgrenciDers_Dersler">
+      <End Role="Dersler" EntitySet="Dersler" />
+      <End Role="OgrenciDers" EntitySet="OgrenciDers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciDers_Ogrenciler" Association="Self.FK_OgrenciDers_Ogrenciler">
+      <End Role="Ogrenciler" EntitySet="Ogrenciler" />
+      <End Role="OgrenciDers" EntitySet="OgrenciDers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

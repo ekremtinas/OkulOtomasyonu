@@ -1,0 +1,81 @@
+﻿@model IEnumerable<OkulOtomasyonu.Models.EntityFramework.Dersler>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int i = 0;
+}
+<h2 class="text-lg-center text-center">Dersler</h2>
+
+
+
+<p>
+
+</p>
+<div class="mt-lg-5 ml-lg-5 pl-lg-1 ">
+    <table class="table table-bordered mt-lg-5 ">
+
+        <tbody>
+            <form action="" id="myForm" method="post">
+                <tr class="">
+
+
+                    <td>
+                        <button class="btn-sm btn btn-outline-info fa fa-search" id="search" name="search" type="submit" value=""></button>
+                    </td>
+                    <td class="p-2">
+                         </td>
+                    <td class="p-2"><input class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="ders_adi" name="ders_adi" type="text" value="">
+</td>
+                    <td class="p-2">
+                        <input class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="ders_hocasi" name="ders_hocasi" type="text" value="">
+                    </td>
+                   
+
+                    <td colspan="4">
+                        <span class="text-danger p-2">@TempData["searcherror"]</span>
+
+                    </td>
+                </tr>
+            </form>
+            <tr class="">
+                <th class="p-2">Sıra No</th>
+
+                <th class="p-2">Ders No <a href="/Dersler/Index/?sort=dersno" id="sortdersno" class=" btn-outline-dark fa fa-sort-down"></a></th>
+                <th class="p-2">Ders Adı <a href="/Dersler/Index/?sort=dersadi" id="sortdersadi" class=" btn-outline-dark fa fa-sort-down"></a></th>
+                <th class="p-2">Ders Hocası <a href="/Dersler/Index/?sort=dershocasi" id="sortdershocasi" class=" btn-outline-dark fa fa-sort-down"></a></th>
+                
+                <td colspan="4" class="text-success p-2">@TempData["create"]</td>
+
+            </tr>
+            
+            @foreach (var item in Model)
+            {
+                i++;
+                <tr>
+                    <td>@i</td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ders_no)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ders_adi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ders_hocasi)
+                    </td>
+                   
+
+                    <td class="p-2"><a href="/Dersler/Edit/@item.id" class="btn btn-outline-primary btn-sm fa fa-pencil " id="@item.id"></a></td>
+                    <td class="p-2"><a href="/Dersler/Details/@item.id" class="btn btn-outline-info btn-sm fa fa-info-circle " id="@item.id"></a></td>
+                    <td class="p-2"><a href="/Dersler/Delete/@item.id" id="@item.id" class="btn btn-outline-warning btn-sm fa fa-trash"></a></td>
+                    <td class="p-2"><a href="/Dersler/DersList/@item.id" id="@item.id" class="btn btn-outline-dark btn-sm fa fa-list"></a></td>
+
+
+
+                </tr>
+            }
+            <tr><td colspan="4"></td><td colspan="4"><a href="/Dersler/Create" class="btn btn-success btn-sm" name="ekle">Yeni Ders Ekle<i class="ml-lg-1 fa fa-plus-circle"></i></a></td></tr>
+
+        </tbody>
+    </table>
+</div>

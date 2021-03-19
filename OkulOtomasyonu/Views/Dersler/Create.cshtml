@@ -1,0 +1,79 @@
+﻿@model OkulOtomasyonu.Models.EntityFramework.Dersler
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Yeni Ders Ekle</h5>
+
+            </div>
+
+            @using (Html.BeginForm("Create", "Dersler", FormMethod.Post, new { id = "myForm" }))
+            {
+                <div class="modal-body">
+
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <style>
+                            .span-danger {
+                                font-size: 12px !important;
+                                opacity: 0.9;
+                                position: fixed;
+                            }
+                        </style>
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger span-danger" })
+
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <input style="display:none;" readonly class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" data-val="true" data-val-number="The field id must be a number." data-val-required="id alanı gereklidir." id="id" name="id" type="text" value="@ViewBag.maxid">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Ders No:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input onclick="spanAdi()" class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="ders_no" min="0" name="ders_no" 
+                                       type="number" value="@ViewBag.maxdersno">
+                                @Html.ValidationMessageFor(model => model.ders_no, "", new { @class = "text-danger span-danger ", id = "spanadi" })
+                                <span  class="field-validation-valid text-danger span-danger">@TempData["Error3"]</span>
+                            </div>
+                        </div>
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Ders Adı:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input onclick="spanSoyadi()" class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="ders_adi" name="ders_adi" type="text" value="">
+                                @Html.ValidationMessageFor(model => model.ders_adi, "", new { @class = "text-danger span-danger", id = "spansoyadi" })
+                                <span  class="field-validation-valid text-danger span-danger">@TempData["Error4"]</span>
+                              
+                            </div>
+                        </div>
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Ders Hocası:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input onclick="spanSifreTekrar()"  class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="ders_hocasi" name="ders_hocasi" type="text" value="">
+                                @Html.ValidationMessageFor(model => model.ders_hocasi, "", new { @class = "text-danger span-danger", id = "spansifretekrar" })
+                               </div>
+                        </div>
+                        
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="/Dersler/Index" class="btn btn-outline-dark">Listeye Dön</a>
+                    <input onclick="return bootboxCreateLesson()" type="button" id="Create" value="Kaydet" class="btn btn-outline-success" />
+
+                </div>
+            }
+        </div>
+    </div>
+</div>

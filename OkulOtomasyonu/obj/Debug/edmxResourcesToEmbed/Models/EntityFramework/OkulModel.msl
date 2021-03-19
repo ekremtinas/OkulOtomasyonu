@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SchoolDatabaseModelStoreContainer" CdmEntityContainer="SchoolDatabaseEntities2">
+    <EntitySetMapping Name="Dersler">
+      <EntityTypeMapping TypeName="SchoolDatabaseModel.Dersler">
+        <MappingFragment StoreEntitySet="Dersler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ders_no" ColumnName="ders_no" />
+          <ScalarProperty Name="ders_adi" ColumnName="ders_adi" />
+          <ScalarProperty Name="ders_hocasi" ColumnName="ders_hocasi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgrenciDers">
+      <EntityTypeMapping TypeName="SchoolDatabaseModel.OgrenciDers">
+        <MappingFragment StoreEntitySet="OgrenciDers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ders_id" ColumnName="ders_id" />
+          <ScalarProperty Name="ogrenci_id" ColumnName="ogrenci_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ogrenciler">
+      <EntityTypeMapping TypeName="SchoolDatabaseModel.Ogrenciler">
+        <MappingFragment StoreEntitySet="Ogrenciler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adi" ColumnName="adi" />
+          <ScalarProperty Name="soyadi" ColumnName="soyadi" />
+          <ScalarProperty Name="tc_no" ColumnName="tc_no" />
+          <ScalarProperty Name="o_no" ColumnName="o_no" />
+          <ScalarProperty Name="d_tarihi" ColumnName="d_tarihi" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yoneticiler">
+      <EntityTypeMapping TypeName="SchoolDatabaseModel.Yoneticiler">
+        <MappingFragment StoreEntitySet="Yoneticiler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="k_adi" ColumnName="k_adi" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="gizlisoru" ColumnName="gizlisoru" />
+          <ScalarProperty Name="gizlicevap" ColumnName="gizlicevap" />
+          <ScalarProperty Name="songiristarihi" ColumnName="songiristarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

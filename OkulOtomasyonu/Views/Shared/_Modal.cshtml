@@ -1,0 +1,67 @@
+﻿@model IEnumerable<OkulOtomasyonu.Models.EntityFramework.Ogrenciler>
+@{ 
+    var list2 = Model.ToList();
+    
+    
+}
+
+<div class="modal fade" id="modelView" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+               <div class="modal-content">
+                   <form action="" method="post">
+                       <div class="modal-header">
+                           <button type="button" class="close btn-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                           <h4 class="modal-title ml-lg-3" id="myModalLabel">Güncelle</h4>
+                       </div>
+                       <div class="modal-body">
+                          
+                           <div class="form-group row">
+                               <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Adı:</b></label>
+                               <div class="col-6">
+
+                                  <input class="form-control  mr-sm-2 btn-sm in-margin" type="text" name="adi" value="" onkeyup="inputUp1()" id="input1">
+                               </div>
+                           </div>
+                           <div class="form-group row">
+                               <label for="input2" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Soyadı:</b></label>
+                               <div class="col-6">
+                                   <input class="form-control  mr-sm-2 btn-sm in-margin" type="text" name="soyadi" value="" onkeyup="inputUp2()" id="input2">
+                               </div>
+                           </div>
+                           <div class="form-group row">
+                               <label for="input3" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>TC No:</b></label>
+                               <div class="col-6">
+                                   <input class="form-control  mr-sm-2 btn-sm in-margin" min="0" maxlength="11" type="number" name="tc_no" value="" id="input3">
+                               </div>
+                           </div>
+                           <div class="form-group row">
+                               <label for="input4" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Öğrenci No:</b></label>
+                               <div class="col-6">
+                                   <input class="form-control  mr-sm-2 btn-sm in-margin" min="0" type="number" name="o_no" value="" id="input4">
+                               </div>
+                           </div>
+                           <div class="form-group row">
+                               <label for="input5" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Doğum Tarihi:</b></label>
+                               <div class="col-6">
+                                   <input class="form-control  mr-sm-2 btn-sm " type="date" name="d_tarihi" value="" id="input5">
+                               </div>
+                           </div>
+                           <div class="form-group row">
+                               <label for="input6" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Adres:</b></label>
+                               <div class="col-6">
+
+
+                                   <textarea class="form-control mr-sm-2" name="adres" rows="5" id="input6"></textarea>
+
+
+                               </div>
+                           </div>
+                       </div>
+                       <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+                           <button type="submit" class="btn btn-primary">Güncelle</button>
+                       </div>
+                   </form>
+               </div>
+           </div>
+       </div>

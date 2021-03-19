@@ -1,0 +1,49 @@
+﻿@using OkulOtomasyonu.Models.EntityFramework
+@{ 
+    SchoolDatabaseEntities2 db = new SchoolDatabaseEntities2();
+    var deger = HttpContext.Current.User.Identity.Name;
+    var deger2 =1;
+    if (deger!="")
+    {
+        deger2 = Convert.ToInt32(deger);
+
+    }
+    else
+    {
+        deger2 = 1;
+    }
+
+    var list = db.Yoneticiler.Where(m => m.id == deger2).ToList();
+}
+<div>
+    <nav style="background-image:url(../../Content/img/bg.png)" class="navbar navbar-expand-lg navbar-light  bg-light box-shadow default-zit-color">
+        <a class="navbar-brand "  href="/Admin/Index"><img style="width:70px" src="~/Content/img/logo4.png"/></a>
+        <a class="navbar-brand" href="/Admin/Index">School Obis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              
+                    <li class="nav-item navbar-toggler">
+                        <a class="nav-link " href="/Yoneticiler/Index">Yöneticiler</a>
+                    </li>
+                    <li class="nav-item navbar-toggler">
+                        
+                        <a class="nav-link " href="/Ogrenciler/Index">Öğrenciler</a>
+                    </li>
+                    <li class="nav-item navbar-toggler">
+                        <a class="nav-link " href="/Dersler/Index">Dersler</a>
+                    </li>
+                
+                <li class="nav-item row ml-lg-2 ml-2">
+                  <a class="nav-link " href="/Yoneticiler/Details/@HttpContext.Current.User.Identity.Name"  > <span class="fa fa-user-circle "></span> Hoşgeldin @list[0].k_adi </a>
+                </li>
+                <li class="nav-item ml-lg-2 ml-2">
+                    <a class="nav-link fa fa-sign-out ml-lg-3 mt-lg-1" href="/Admin/Logout/@HttpContext.Current.User.Identity.Name"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+</div>

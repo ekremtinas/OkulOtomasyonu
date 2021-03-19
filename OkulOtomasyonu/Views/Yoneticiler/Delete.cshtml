@@ -1,0 +1,101 @@
+﻿@model OkulOtomasyonu.Models.EntityFramework.Yoneticiler
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Yönetici Silinsin mi?</h5>
+
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Kullanıcı Adı:</b></label>
+                    <div class="col-6">
+                        @Html.DisplayFor(model => model.k_adi)
+
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Şifre:</b></label>
+                    <div class="col-6">
+                       @{
+                           if (Model.id.ToString() == HttpContext.Current.User.Identity.Name)
+                           {
+                            @Model.sifre
+                           } }
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>E Mail:</b></label>
+                    <div class="col-6">
+                        @Html.DisplayFor(model => model.email)
+
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Gizli Soru:</b></label>
+                    <div class="col-6">
+                       @{
+                           if (Model.id.ToString() == HttpContext.Current.User.Identity.Name)
+                           {
+                            @Model.gizlisoru
+                           } }
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Gizli Cevap:</b></label>
+                    <div class="col-6">
+                       @{
+                           if (Model.id.ToString() == HttpContext.Current.User.Identity.Name)
+                           {
+                            @Model.gizlicevap
+                           } }
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Son Giriş Tarihi:</b></label>
+                    <div class="col-6">
+                        @{
+                            var deger = "";
+                            if (Model.songiristarihi != null)
+                            {
+                                deger = Model.songiristarihi.Value.ToShortDateString();
+                            } }
+                        @deger
+                    </div>
+
+
+
+                </div>
+
+                <div class="modal-footer">
+
+                    @using (Html.BeginForm("Delete", "Yoneticiler", FormMethod.Post, new { id = "myForm" }))
+            {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+<a href="/Yoneticiler/Index" class="btn btn-outline-dark">Listeye Dön</a>
+                            <input onclick="return bootboxDeleteAdmin()" type="button" id="Delete" value="Sil" class="btn btn-outline-warning" />
+
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

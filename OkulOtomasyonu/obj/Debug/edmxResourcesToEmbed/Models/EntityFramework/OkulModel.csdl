@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SchoolDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Dersler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ders_no" Type="Int32" Nullable="false" />
+    <Property Name="ders_adi" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ders_hocasi" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="OgrenciDers" Relationship="Self.FK_OgrenciDers_Dersler" FromRole="Dersler" ToRole="OgrenciDers" />
+  </EntityType>
+  <EntityType Name="OgrenciDers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ders_id" Type="Int32" />
+    <Property Name="ogrenci_id" Type="Int32" />
+    <NavigationProperty Name="Dersler" Relationship="Self.FK_OgrenciDers_Dersler" FromRole="OgrenciDers" ToRole="Dersler" />
+    <NavigationProperty Name="Ogrenciler" Relationship="Self.FK_OgrenciDers_Ogrenciler" FromRole="OgrenciDers" ToRole="Ogrenciler" />
+  </EntityType>
+  <EntityType Name="Ogrenciler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="adi" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="soyadi" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="tc_no" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="o_no" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="d_tarihi" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="OgrenciDers" Relationship="Self.FK_OgrenciDers_Ogrenciler" FromRole="Ogrenciler" ToRole="OgrenciDers" />
+  </EntityType>
+  <EntityType Name="Yoneticiler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="k_adi" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="sifre" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="gizlisoru" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+    <Property Name="gizlicevap" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+    <Property Name="songiristarihi" Type="DateTime" Precision="0" />
+  </EntityType>
+  <Association Name="FK_OgrenciDers_Dersler">
+    <End Role="Dersler" Type="Self.Dersler" Multiplicity="0..1" />
+    <End Role="OgrenciDers" Type="Self.OgrenciDers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dersler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OgrenciDers">
+        <PropertyRef Name="ders_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciDers_Ogrenciler">
+    <End Role="Ogrenciler" Type="Self.Ogrenciler" Multiplicity="0..1" />
+    <End Role="OgrenciDers" Type="Self.OgrenciDers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenciler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OgrenciDers">
+        <PropertyRef Name="ogrenci_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SchoolDatabaseEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Dersler" EntityType="Self.Dersler" />
+    <EntitySet Name="OgrenciDers" EntityType="Self.OgrenciDers" />
+    <EntitySet Name="Ogrenciler" EntityType="Self.Ogrenciler" />
+    <EntitySet Name="Yoneticiler" EntityType="Self.Yoneticiler" />
+    <AssociationSet Name="FK_OgrenciDers_Dersler" Association="Self.FK_OgrenciDers_Dersler">
+      <End Role="Dersler" EntitySet="Dersler" />
+      <End Role="OgrenciDers" EntitySet="OgrenciDers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciDers_Ogrenciler" Association="Self.FK_OgrenciDers_Ogrenciler">
+      <End Role="Ogrenciler" EntitySet="Ogrenciler" />
+      <End Role="OgrenciDers" EntitySet="OgrenciDers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

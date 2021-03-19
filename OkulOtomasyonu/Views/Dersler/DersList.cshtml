@@ -1,0 +1,77 @@
+﻿@model IEnumerable<OkulOtomasyonu.Models.EntityFramework.OgrenciDers>
+
+@{
+    ViewBag.Title = "DersList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var list = Model.ToList();
+}
+
+
+
+
+
+
+<div class="" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Dersin Öğrencileri</h5>
+
+            </div>
+
+            <div class="modal-body">
+
+               
+
+
+
+               
+                    <table class="table table-bordered  ">
+
+                        <tbody>
+                            <tr>
+                                <th>
+                                    Ders Adı
+                                </th>
+                                <th>
+                                    Öğrenci Adı Soyadı
+                                </th>
+
+                            </tr>
+                            <tr>
+                                @{
+                                    if (list.Count() == 0)
+                                    {
+                                        <th colspan="2">Bu Dersi alan öğrenci yoktur.</th>
+                                    }
+                                }
+                            </tr>
+
+
+
+                            @foreach (var item in Model)
+                            {
+
+                                <tr>
+                                    <td>
+
+                                        @Html.DisplayFor(modelItem => item.Dersler.ders_adi)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Ogrenciler.adi)
+                                        @Html.DisplayFor(modelItem => item.Ogrenciler.soyadi)
+                                    </td>
+
+                                </tr>
+                            }
+
+                            
+                        </tbody>
+                    </table>
+                </div>
+            <div class="modal-footer">
+                <a href="/Dersler/Index" class="btn btn-outline-dark">Listeye Dön</a>
+                </div>
+            </div>
+    </div>
+</div>

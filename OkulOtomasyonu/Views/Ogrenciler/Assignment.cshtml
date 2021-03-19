@@ -1,0 +1,96 @@
+﻿@model OkulOtomasyonu.Models.EntityFramework.OgrenciDers
+@using OkulOtomasyonu.Models.EntityFramework
+
+@{
+    ViewBag.Title = "Assignment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    SchoolDatabaseEntities2 db = new SchoolDatabaseEntities2();
+    var list = db.OgrenciDers.ToList();
+    int i = 0;
+}
+
+<div class="" tabindex="-1" role="dialog" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ders Atama</h5>
+
+            </div>
+
+@using (Html.BeginForm("Assignment", "Ogrenciler", FormMethod.Post, new { id = "myForm" }))
+            {
+    @Html.AntiForgeryToken()
+
+            <div class="modal-body" >
+
+                    <div class="form-horizontal" >
+                      
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <input style="display:none;" readonly class="form-control text-box single-line" data-val="true" data-val-number="The field id must be a number." data-val-required="id alanı gereklidir." id="id" name="id" type="number" value="@ViewBag.maxid">
+                              </div>
+                        </div>
+                        <h4 class="text-center">
+                           
+                                @{
+                                    int aid = Convert.ToInt32(ViewBag.id);
+                                    var list4 = db.Ogrenciler.Where(m => m.id == aid).ToList();
+                                    @list4[0].adi @list4[0].soyadi
+
+                                }
+                           
+                        </h4>
+                        <div class="form-group row">
+                            <label class="control-label col-md-2" for="ders_id">Ders Seçiniz:</label>
+                             <div class="col-md-10">
+
+
+                                 @{
+
+                                     var list3 = db.Dersler.ToList();
+
+                                     foreach (var item in list3)
+                                     {
+                                         
+
+
+                                         var ist = db.OgrenciDers.Where(m => m.ders_id == item.id && m.ogrenci_id == aid).ToList();
+
+
+
+
+                                         <input @{if (ist.Count()!=0) { <text>checked</text> } }  id="ders_id2" name="ders_id2" type="checkbox"  value="@item.id" />   @item.ders_adi
+                                         <br />
+
+
+                                             }}
+
+
+
+                                @Html.ValidationMessageFor(model => model.ders_id, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-2" for="ogrenci_id">Öğrenci ID:</label>
+                            <div class="col-md-10">
+                                <input readonly class="form-control text-box single-line" data-val="true" data-val-number="The field ogrenci_id must be a number." id="ogrenci_id" name="ogrenci_id" type="number" value="@ViewBag.id">
+
+                                @Html.ValidationMessageFor(model => model.ogrenci_id, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                
+
+                        <div class="modal-footer">
+                            <a href="/Ogrenciler/Index" class="btn btn-outline-dark" >Listeye Dön</a>
+                            <input onclick="return bootboxAssignment()" type="button" id="Assignment" value="Kaydet" class="btn btn-outline-success" />
+ </div>
+            </div>}
+        </div>
+    </div>
+</div>

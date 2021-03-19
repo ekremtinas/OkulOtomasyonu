@@ -1,0 +1,111 @@
+﻿@model OkulOtomasyonu.Models.EntityFramework.Ogrenciler
+@using OkulOtomasyonu.Controllers
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Yeni Öğrenci Ekle</h5>
+
+            </div>
+            
+              @using (Html.BeginForm("Create", "Ogrenciler", FormMethod.Post, new { id = "myForm" }))
+              {
+                <div class="modal-body">
+
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <style>
+                            .span-danger
+                            {
+
+                            font-size:12px !important;
+                            opacity:0.9;
+                            position:fixed;
+                            
+                        }
+                        </style>
+                       
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger span-danger" })
+                       
+                        <div class="form-group row">
+                             <div class="col-6">
+                                <input style="display:none;"  readonly class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" data-val="true" data-val-number="The field id must be a number." data-val-required="id alanı gereklidir." id="id" name="id" type="text" value="@ViewBag.maxid">
+                              
+                                </div>
+                        </div>
+                       
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Adı:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input onkeypress="return isNumberKey(event)" onclick="spanAdi()" class="form-control  mr-sm-2 btn-sm in-margin text-box single-line"  id="adi" name="adi" type="text" value="">
+                                 @Html.ValidationMessageFor(model => model.adi, "", new { @class = "text-danger span-danger ", id = "spanadi" })
+                            </div>
+                        </div>
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Soyadı:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input onkeypress="return isNumberKey(event)"  onclick="spanSoyadi()" class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="soyadi" name="soyadi" type="text" value="">
+                                 @Html.ValidationMessageFor(model => model.soyadi, "", new { @class = "text-danger span-danger", id = "spansoyadi" })
+                            </div>
+                        </div>
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>TC No:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                               
+                                <input onkeypress="return isTextKey(event)" onkeyup="tckimlikkontrolu(this)"  onclick="spanTcno()" maxlength="11"  class="form-control  mr-sm-2 btn-sm in-margin  single-line" id="tc_no" name="tc_no" min="0" type="text" value="">
+                                    @Html.ValidationMessageFor(model => model.tc_no, "", new { @class = "text-danger span-danger", id = "spantcno" })
+                               <span id="tc_noError" class="field-validation-valid text-danger span-danger"></span>
+                                <span id="tc_noNotError" class="field-validation-valid text-success span-danger"></span>
+                               
+                                 <span id="tc_noNotError2" class="field-validation-valid text-danger span-danger">@TempData["Error3"]</span>
+</div>
+</div>
+
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Okul No:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input onkeypress="return isTextKey(event)"  onclick="spanOno()" maxlength="9" class="form-control  mr-sm-2 btn-sm in-margin text-box single-line" id="o_no" min="0"  name="o_no" type="text" value="">
+                                @Html.ValidationMessageFor(model => model.o_no, "", new { @class = "text-danger span-danger", id = "spanono" })
+                                
+                                    <span class="field-validation-valid text-danger span-danger"> @TempData["Error4"] </span>
+</div>
+                        </div>
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Doğum Tarihi:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input class="input-validation-error form-control  mr-sm-2 btn-sm in-margin datepicker text-box single-line"  onclick="spanDtarihi()" data-val="false" data-val-date="Lütfen tarih formatında giriniz" data-val-required="Doğum tarihi alanı gereklidir." id="d_tarihi" name="d_tarihi" type="date" value="">
+                                 @Html.ValidationMessageFor(model => model.d_tarihi, "", new { @class = "text-danger span-danger", id = "spandtarihi" })
+
+                            </div>
+                        </div>
+                        <div class="form-group row pt-lg-2">
+                            <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Adres:</b></label><text class="star">*</text>
+                            <div class="col-6">
+                                <input class="input-validation-error form-control  mr-sm-2 btn-sm in-margin text-box single-line"  onclick="spanAdres()" data-val="true" data-val-required="Lütfen bir Adres giriniz." id="adres" name="adres" type="text" value="">
+                                 @Html.ValidationMessageFor(model => model.adres, "", new { @class = "text-danger span-danger", id = "spanadres" })
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                     <a href="/Ogrenciler/Index"  class="btn btn-outline-dark ">Listeye Dön</a>
+                    <input onclick="return bootboxCreate()" type="button" id="Create" value="Kaydet" class="btn btn-outline-success"/> 
+
+                </div>
+              }
+        </div>
+    </div>
+</div>
+
+        
+
+

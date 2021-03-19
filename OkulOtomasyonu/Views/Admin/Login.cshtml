@@ -1,0 +1,58 @@
+﻿
+@model OkulOtomasyonu.Models.EntityFramework.Yoneticiler
+@{
+    Layout = null;
+
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <title>School Obis | Login</title>
+    <link rel="icon" href="~/Content/logov6.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="~/Content/main.css" />
+     <link  type="text/css"  rel="stylesheet" href="~/Content/bootstrap.css"/>
+
+    <script type="text/javascript" language="javascript" src="~/scripts/main.js"></script>
+</head>
+<body>
+    <div style="" class="text-center pt-5 pt-lg-2 pr-lg-5 pl-lg-5 mt-lg-4 container">
+       
+
+        <div style="background-image:url(../../Content/img/bg.png) ; " class="box-shadow default-zit-color pb-5 pt-4 mt-2 mt-lg-4 mb-lg-5 mr-lg-5 p-lg-5 offset-lg-4   col-lg-4">
+    <h5 class="text-center ">Giriş</h5>
+    <img class="w-50 mt-lg-1" src="~/Content/img/logo3.png" />
+    @using (Html.BeginForm("Login", "Admin", FormMethod.Post))
+    {
+        <br />
+            @Html.TextBoxFor(m => m.k_adi, new { @class = "btn-sm ml-lg-5 form-control col-lg-8 mb-lg-3 col-8 offset-2 mb-3", placeholder = "Kullanıcı Adı" })
+            @Html.PasswordFor(s => s.sifre, new { @class = "btn-sm ml-lg-5 form-control col-lg-8 col-8 offset-2", placeholder = "Şifre" })
+        <input class="password-check-login" type="checkbox" id="input-sifre2" onchange="myChangle()" onclick="myFunction3()">
+
+        if (ViewBag.mesaj != null)
+        {
+                <div  style="opacity:0.7" class="col-lg-12 col-12 mt-2 mt-lg-2  default-zit-color check-label-size">
+                 <div class="alert alert-warning" role="alert">
+                        @ViewBag.mesaj
+                    </div>
+                </div>
+        }
+        else
+        {
+            <div style="opacity:0.0;" class="col-lg-12 col-12  mt-lg-2  default-zit-color check-label-size">
+                <div class="alert alert-primary" role="alert">
+                   asdasda
+                </div>
+            </div>
+        }
+                  <label class="col-lg-5 check-label-size col-5" for="hatirla">Beni Hatırla</label> <input id="hatirla" class="btn  col-lg-1 check-size col-1" type="checkbox" name="benihatirla" value="true" /><br />
+                <button class="btn form-control btn-light col-lg-4 mt-5 mb-5 col-4" type="submit" name="giris">Giriş</button>
+    }
+        </div>
+    </div>
+</body>
+</html>

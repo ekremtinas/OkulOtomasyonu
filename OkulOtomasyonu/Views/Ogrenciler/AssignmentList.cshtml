@@ -1,0 +1,52 @@
+﻿@model IEnumerable<OkulOtomasyonu.Models.EntityFramework.OgrenciDers>
+
+@{
+    ViewBag.Title = "AssignmentList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 class="text-lg-center text-center">Öğrencinin Dersleri</h2>
+
+
+
+<p>
+
+</p>
+<div class="mt-lg-5 ml-lg-5 pl-lg-1 ">
+    <table class="table table-bordered mt-lg-5 ">
+
+        <tbody>
+            <tr>
+                <th>
+                    Ders Adı
+                </th>
+                <th>
+                    Öğrenci Adı
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Dersler.ders_adi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ogrenciler.adi) @Html.DisplayFor(modelItem => item.Ogrenciler.soyadi)
+                    </td>
+
+                    <td class="p-2"><a href="/Ogrenciler/Assignment/@ViewBag.id" class="btn btn-outline-primary btn-sm fa fa-pencil " id="@item.id"></a></td>
+
+
+                </tr>
+            }
+            <tr>
+            <td colspan="2" ></td>
+        <td class="p-2">
+            <a href="/Ogrenciler/Index" class="btn btn-outline-dark">Listeye Dön</a>
+        </td></tr>
+        </tbody>
+    </table>
+</div>

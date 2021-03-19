@@ -1,0 +1,91 @@
+﻿@model IEnumerable<OkulOtomasyonu.Models.EntityFramework.Yoneticiler>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int i = 0;
+}
+
+<h2 class="text-lg-center text-center">Yöneticiler</h2>
+
+
+
+<p>
+
+</p>
+<div class="mt-lg-5 ml-lg-5 pl-lg-1 ">
+    <table class="table table-bordered mt-lg-5 ">
+
+        <tbody>
+
+            <tr class="">
+                <th class="p-2">Sıra No</th>
+
+                <th class="p-2">Kullanıcı Adı <a href="/Yoneticiler/Index/?sort=kadi" id="sortkadi" class=" btn-outline-dark fa fa-sort-down"></a></th>
+                <th class="p-2">Şifre</th>
+                <th class="p-2">E Mail <a href="/Yoneticiler/Index/?sort=email" id="sortemail" class=" btn-outline-dark fa fa-sort-down"></a></th>
+                <th class="p-2">Gizli Soru</th>
+                <th class="p-2">Gizli Cevap</th>
+                <th class="p-2">Son Giriş Tarihi <a href="/Yoneticiler/Index/?sort=sgt" id="sortsgt" class=" btn-outline-dark fa fa-sort-down"></a></th>
+                <td colspan="3" class="text-success p-2">@TempData["create"]</td>
+               
+</tr>
+
+            @foreach (var item in Model)
+            {
+                i++;
+                <tr>
+                    <td>@i</td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.k_adi)
+                    </td>
+                    <td>
+                        @{
+                            if (item.id.ToString() == HttpContext.Current.User.Identity.Name)
+                            {
+                                <div> @item.sifre</div>
+                            }
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.email)
+                    </td>
+                    <td>
+                       @{
+                           if (item.id.ToString() == HttpContext.Current.User.Identity.Name)
+                           {
+                            <div> @item.gizlisoru</div>
+                           }
+                    }
+                    </td>
+                    <td>
+                       @{
+                           if (item.id.ToString() == HttpContext.Current.User.Identity.Name)
+                           {
+                            <div> @item.gizlicevap</div>
+                           }
+                    }
+                    </td>
+                    <td>
+                        @{
+                            var deger = "";
+                            if (item.songiristarihi != null)
+                            {
+                                deger = item.songiristarihi.Value.ToShortDateString();
+                            } }
+                        @deger
+                    </td>
+
+                    <td class="p-2"><a href="/Yoneticiler/Edit/@item.id"  class="btn btn-outline-primary btn-sm fa fa-pencil " id="@item.id"></a></td>
+                    <td class="p-2"><a href="/Yoneticiler/Details/@item.id" class="btn btn-outline-info btn-sm fa fa-info-circle " id="@item.id"></a></td>
+                    <td class="p-2"><a href="/Yoneticiler/Delete/@item.id" id="@item.id" class="btn btn-outline-warning btn-sm fa fa-trash"></a></td>
+
+
+
+                </tr>
+            }
+            <tr><td colspan="7"></td><td colspan="3"><a href="/Yoneticiler/Create" class="btn btn-success btn-sm" name="ekle">Yeni Yönetici Ekle<i class="ml-lg-1 fa fa-plus-circle"></i></a></td></tr>
+
+        </tbody>
+    </table>
+</div>

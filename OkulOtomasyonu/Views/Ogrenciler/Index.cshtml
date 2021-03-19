@@ -1,0 +1,87 @@
+﻿@model IEnumerable<OkulOtomasyonu.Models.EntityFramework.Ogrenciler>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int i = 0;
+}
+
+<h2 class="text-lg-center text-center">Öğrenciler</h2>
+
+
+
+    <p>
+        
+    </p>
+<div class="mt-lg-5 ml-lg-5 pl-lg-1 ">
+  
+    <table class="table table-bordered mt-lg-5 ">
+
+        <tbody>
+       
+            <tr class="">
+                <th class="p-2">Sıra No</th>
+               
+                <th class="p-2">Adı <a href="/Ogrenciler/Index/?sort=adi" id="sortadi" class=" btn-outline-dark  fa fa-sort-down"></a></th>
+                <th class="p-2">Soyadı <a href="/Ogrenciler/Index/?sort=soyadi" id="sortsoyadi" class=" btn-outline-dark  fa fa-sort-down"></a></th>
+                <th class="p-2">TC No <a href="/Ogrenciler/Index/?sort=tcno" id="sorttcno" class=" btn-outline-dark  fa fa-sort-down"></a></th>
+                <th class="p-2">Okul No <a href="/Ogrenciler/Index/?sort=ono" id="sortono" class="btn-outline-dark  fa fa-sort-down"></a></th>
+                <th class="p-2 col-1">Doğum Tarihi <a href="/Ogrenciler/Index/?sort=dtarihi" id="sortdtarihi" class=" btn-outline-dark  fa fa-sort-down"></a></th>
+                <th class="p-2 col-2">Adres <a href="/Ogrenciler/Index/?sort=adres" id="sortadres" class=" btn-outline-dark  fa fa-sort-down"></a></th>
+                <td colspan="5"  class="text-success p-2">@TempData["create"]</td>
+
+            </tr>
+
+        @foreach (var item in Model)
+        {
+            i++;
+            <tr>
+                <td>@i</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.adi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.soyadi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tc_no)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.o_no)
+                </td>
+                <td>
+                    @item.d_tarihi.ToShortDateString()
+                </td>
+                <td>
+                    @{ string adres = item.adres;
+                        if (adres.Length > 9)
+                        {
+                            string adres2 = adres.Substring(0, 10);
+                            @adres2<text>...</text>
+                        }
+                        else
+                        {
+                            @adres
+                        }
+                       
+                        }
+                </td>
+              <!-- <td class="p-2"><a  onclick="bootbox.alert('asda')" class="btn btn-outline-primary btn-sm fa fa-address-book "  id=""></a></td> -->
+
+                <td class="p-2"><a href="/Ogrenciler/Edit/@item.id" class="btn btn-outline-primary btn-sm fa fa-pencil "   id="@item.id"></a></td>
+                <td class="p-2"><a href="/Ogrenciler/Details/@item.id" class="btn btn-outline-info btn-sm fa fa-info-circle " id="@item.id"></a></td>
+                <td class="p-2"><a href="/Ogrenciler/Delete/@item.id"  id="@item.id" class="btn btn-outline-warning btn-sm fa fa-trash"></a></td>
+                <td class="p-2"><a href="/Ogrenciler/Assignment/@item.id" id="@item.id" class="btn btn-outline-secondary btn-sm fa fa-plus"></a></td>
+                <td class="p-2"><a href="/Ogrenciler/AssignmentList/@item.id" id="@item.id" class="btn btn-outline-dark btn-sm fa fa-list"></a></td>
+
+                   
+                
+            </tr>
+        }
+        <tr><td colspan="9"></td><td colspan="3"><a href="/Ogrenciler/Create" class="btn btn-success btn-sm" name="ekle">Yeni Öğrenci Ekle<i class="ml-lg-1 fa fa-plus-circle"></i></a></td></tr>
+
+        </tbody>
+       
+    </table>
+    @Html.Partial("~/Views/Shared/_Modal.cshtml", Model)
+    </div>

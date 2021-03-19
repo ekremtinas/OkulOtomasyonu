@@ -1,0 +1,55 @@
+﻿@model OkulOtomasyonu.Models.EntityFramework.Dersler
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detaylı Bilgi</h5>
+
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Ders No:</b></label>
+                    <div class="col-6">
+                        @Html.DisplayFor(model => model.ders_no)
+
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Ders Adı:</b></label>
+                    <div class="col-6">
+                        @Html.DisplayFor(model => model.ders_adi)
+
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="input1" class="col-3 col-form-label text-sm-right mr-sm-2 btn-sm in-margin"><b>Ders Hocası:</b></label>
+                    <div class="col-6">
+                        @Html.DisplayFor(model => model.ders_hocasi)
+
+                    </div>
+                </div>
+
+
+
+
+
+               
+
+                <div class="modal-footer">
+                   
+                    <a href="/Dersler/Index" class="btn btn-outline-dark">Listeye Dön</a>
+                    <a href="/Dersler/Edit/@Model.id" class="btn btn-outline-success" id="@Model.id">Güncelle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
